@@ -6,7 +6,7 @@ let app = express()
 app.use(require('./routes/Authentication'))
 
 
-app.listen('3001', () => {
+app.listen(process.env.PORT || '3001', () => {
     console.log(`listening on port 3001`)
 }
 )
